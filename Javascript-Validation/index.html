@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <form id="myform" action="#" method="POST" enctype="multipart/form-data">
+        <div class="row">
+            <div class="form-group col-lg-4">
+                <label for="fullName">Full Name</label><span class="text-danger">*</span>
+                <input type="text" class="form-control" id="fullNameinput" aria-describedby="fullName" placeholder="Enter Full Name">
+                <div class="invalid-feedback" id="fullnameblank">
+                  Please Enter Full Name.
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-4">
+                <label for="age">Age</label><span class="text-danger">*</span>
+                <input type="number" class="form-control" id="ageinput" placeholder="Enter Age">
+                <div class="invalid-feedback" id="ageblank">
+                  Please Enter Age.
+                </div>
+              </div>
+        </div>
+        <div class="form-group">
+            <label for="Gender">Gender</label><span class="text-danger">*</span><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioOptions" value="male">
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioOptions" value="female">
+                <label class="form-check-label" for="inlineRadio2">Female</label>
+              </div>
+              <div class="invalid-feedback" id="radioblank">
+                Please select gender.
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-2">
+                <label for="age">Qualification</label><span class="text-danger">*</span>
+                <select class="custom-select mr-sm-2" id="dropdownSelectinput">
+                    <option selected>Choose...</option>
+                    <option value="1">BTECH</option>
+                    <option value="2">BSC</option>
+                    <option value="3">MTECH</option>
+                    <option value="4">MSC</option>
+                    <option value="5">BCA</option>
+                    <option value="6">MCA</option>
+                </select>
+                <div class="invalid-feedback" id="dropdownSelectblank">
+                  Please Select a Qualification.
+                </div>
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-lg-6">
+                <label for="AboutYourself">About Yourself</label><span class="text-danger">*</span>
+                <textarea class="form-control" id="AboutYourselfinput" rows="3"></textarea>
+                <div class="invalid-feedback" id="AboutYourselfblank">
+                  Please Write About Yourself.
+                </div>
+              </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-lg-4">
+            <label for="cv">CV</label><span class="text-danger">*</span>
+            <input type="file" class="form-control-file" id="cvupload">
+            <!-- <div class="invalid-feedback" id="cvblank">
+              Please upload only pdf,doc,docx file formats.
+            </div> -->
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary" id="submitbtn">Submit</button>
+      </form>
+
+<!--  Including app.js jQuery Script -->
+<script src="app.js"></script>
+</body>
+</html>

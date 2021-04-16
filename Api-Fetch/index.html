@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <!-- Latest compiled JavaScript -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="justify-content-center headline">
+        <h5></h5>
+        <p class="addrctst"></p>
+        <p class="pheml"></p>
+        <p class="gst"></p>
+    </div>
+
+    <div class="top-container border-top">
+        <div class="row">
+            <div class="col-6 col-md-4">Table No:</div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4 text-right table_no text-warning">Take Away</div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4">Date-Time:</div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4 text-right timestamp text-warning"></div>
+        </div>
+    </div>
+
+    <div class="table">
+        <table id="datable_1" class="table" >
+        <thead>
+        <tr>
+        <th>No</th>
+        <th>Item Name</th>
+        <th>Price</th>
+        <th>QTY</th>
+        <th class="text-right">Amt.</th>
+        </tr>
+        </thead>
+        <tbody class="border-bottom">
+            <tr>
+            <td class="no"></td>
+            <td class="menu_name"></td>
+            <td class="menu_price"></td>
+            <td class="menu_quantity"></td>
+            <td class="menu_amount text-right"></td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="bottom-container">
+        <div class="row">
+            <div class="col-6 col-md-4">Sub Total</div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4 text-right sub_total"></div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-md-4 discount_title"></div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4 text-right discount"></div>
+        </div>
+        <div class="row grand-total-div">
+            <div class="col-6 col-md-4">Grand Total</div>
+            <div class="col-6 col-md-4"></div>
+            <div class="col-6 col-md-4 text-right grand_total"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-12 text-center bg-warning" style="color: white;">Thank you!</div>
+        </div>
+    </div>
+
+</body>
+      
+      <script src="ajaxApi.js"></script>
+</html>

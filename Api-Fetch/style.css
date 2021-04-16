@@ -1,0 +1,54 @@
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.headline {
+    color: #A38775;
+    text-align: center;
+}
+
+.bottom-container {
+    color: #A38775;
+    font-weight: bold;
+    position: relative;
+}
+
+.top-container {
+    color: #A38775;
+    font-weight: bold;
+    position: relative;
+}
+
+.table thead th {
+    background-color: #A38775;
+    color: white;
+}
+
+.table-responsive {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+.bottom-container .row > div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 0 0 0;
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+.top-container .row > div{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 0 0 0;
+    padding-right: 26px;
+    padding-left: 26px;
+}
+
+.grand-total-div {
+    background-color: #EFEFEF;
+}
+
+.table td, .table th {
+    font-weight: bold;
+}
